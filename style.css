@@ -212,3 +212,19 @@ body{
 .switch input:nth-child(4):checked ~ .wrapper{
   transform: translateX(-240vw);
 }
+@media (max-width: 500px) {
+  .box-box{
+    flex-direction: column;
+  }
+  .controls__text{
+    max-width: 100%;
+  }
+  .controls{
+    order: -1;
+    margin: 0 auto;
+  }
+  .wrapper .box img{
+    max-width: 80vw; 
+    max-height: 40vh;
+   }
+}

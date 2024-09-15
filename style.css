@@ -171,6 +171,35 @@ body{
   border-radius: 1rem;
   background: #141414;
 }
+.wrapper{
+  order: -1;
+  width: 360vw;
+  display: flex;
+  transition: .3s;
+}  
+.wrapper .box{
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .box img{
+ max-width: 80vw; 
+ max-height: 60vh;
+}
+.switch input:nth-child(1):checked ~ .wrapper{
+  transform: translateX(0vw);
+}
+.switch input:nth-child(2):checked ~ .wrapper{
+  transform: translateX(-80vw);
+}
+.switch input:nth-child(3):checked ~ .wrapper{
+  transform: translateX(-160vw);
+}
+.switch input:nth-child(4):checked ~ .wrapper{
+  transform: translateX(-240vw);
+}
 
 
 
